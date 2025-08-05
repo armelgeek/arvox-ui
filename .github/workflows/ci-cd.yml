@@ -113,11 +113,11 @@ jobs:
           release_name: Arvox UI v${{ steps.version.outputs.new_version }}
           body: |
             ## Changes
-            Auto-release for @arvox/ui v${{ steps.version.outputs.new_version }}
+            Auto-release for arvox-ui v${{ steps.version.outputs.new_version }}
             
             ## Installation
             ```bash
-            npm install @arvox/ui@${{ steps.version.outputs.new_version }}
+            npm install arvox-ui@${{ steps.version.outputs.new_version }}
             ```
           draft: false
           prerelease: false

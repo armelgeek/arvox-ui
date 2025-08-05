@@ -5,7 +5,7 @@
 ```typescript
 // auth-client.ts
 import { createAuthClient } from 'better-auth/react';
-import type { BetterAuthClient } from '@arvox/ui';
+import type { BetterAuthClient } from 'arvox-ui';
 
 // Configuration du client Better Auth
 export const authClient = createAuthClient({
@@ -47,7 +47,7 @@ export const arvoxAuthClient: BetterAuthClient = {
 
 ```typescript
 // components/ProfileForm.tsx
-import { useChangePassword, useUpdateProfile } from '@arvox/ui';
+import { useChangePassword, useUpdateProfile } from 'arvox-ui';
 import { arvoxAuthClient } from '../lib/auth-client';
 
 export function ProfileForm() {
@@ -81,7 +81,7 @@ export function ProfileForm() {
 ```typescript
 // contexts/AuthContext.tsx
 import { createContext, useContext } from 'react';
-import type { BetterAuthClient } from '@arvox/ui';
+import type { BetterAuthClient } from 'arvox-ui';
 import { arvoxAuthClient } from '../lib/auth-client';
 
 const AuthContext = createContext<BetterAuthClient>(arvoxAuthClient);
@@ -101,7 +101,7 @@ export function useAuthClient() {
 
 ```typescript
 // components/ProfileForm.tsx (avec contexte)
-import { useChangePassword } from '@arvox/ui';
+import { useChangePassword } from 'arvox-ui';
 import { useAuthClient } from '../contexts/AuthContext';
 
 export function ProfileForm() {

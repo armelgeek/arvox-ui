@@ -5,7 +5,7 @@ import {
   CardTitle, 
   Typography,
   Badge
-} from '@arvox/ui'
+} from 'arvox-ui'
 
 export default function DashboardPage() {
   const stats = [

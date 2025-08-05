@@ -32,13 +32,13 @@ Un template moderne Next.js avec la bibliothèque de composants Arvox UI, prêt 
    pnpm install
    ```
 
-3. **Configurer @arvox/ui**
+3. **Configurer arvox-ui**
    
-   Assurez-vous que la bibliothèque `@arvox/ui` est disponible. Si vous développez en local :
+   Assurez-vous que la bibliothèque `arvox-ui` est disponible. Si vous développez en local :
    ```bash
-   # Dans le répertoire parent contenant @arvox/ui
+   # Dans le répertoire parent contenant arvox-ui
    pnpm install
-   pnpm build # dans le package @arvox/ui
+   pnpm build # dans le package arvox-ui
    ```
 
 4. **Lancer le serveur de développement**
@@ -119,7 +119,7 @@ theme: {
 
 ### Composants Arvox UI
 
-Les composants sont configurés pour utiliser le système de design Arvox. Consultez la documentation d'@arvox/ui pour les options de personnalisation.
+Les composants sont configurés pour utiliser le système de design Arvox. Consultez la documentation d'arvox-ui pour les options de personnalisation.
 
 ## 📚 Ressources
 

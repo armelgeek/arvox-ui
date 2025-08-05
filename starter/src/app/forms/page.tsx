@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Card, CardContent, CardTitle, Input, Typography } from '@arvox/ui'
+import { Button, Card, CardContent, CardTitle, Input, Typography } from 'arvox-ui'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'

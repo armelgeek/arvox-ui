@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Typography } from '@arvox/ui'
+import { Button, Typography } from 'arvox-ui'
 
 interface NavigationProps {
   currentPath?: string

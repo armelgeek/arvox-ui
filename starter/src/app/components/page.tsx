@@ -8,7 +8,7 @@ import {
   LoadingButton,
   Badge,
   Spinner
-} from '@arvox/ui'
+} from 'arvox-ui'
 
 export default function ComponentsPage() {
   return (

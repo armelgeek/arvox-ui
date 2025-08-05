@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Card, CardContent, CardTitle, Input, Typography } from '@arvox/ui'
+import { Button, Card, CardContent, CardTitle, Input, Typography } from 'arvox-ui'
 import { useState } from 'react'
 
 export default function LoginPage() {

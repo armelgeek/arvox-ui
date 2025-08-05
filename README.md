@@ -1,4 +1,4 @@
-# @arvox/ui
+# arvox-ui
 
 Bibliothèque UI réutilisable pour les projets Arvox avec authentification Better Auth intégrée.
 
@@ -37,13 +37,14 @@ Bibliothèque UI réutilisable pour les projets Arvox avec authentification Bett
 ## 📦 Installation
 
 ```bash
-pnpm add @arvox/ui
+pnpm add arvox-ui
 ```
+
 
 ### Peer Dependencies
 
 ```bash
-pnpm add react@^19 react-dom@^19 @tanstack/react-query@^5 react-router@^7 react-hook-form@^7 zod@^3 better-auth@^1 sonner@^1 tailwindcss@^3 @radix-ui/react-dialog@^1
+pnpm add react@^19 react-dom@^19 @tanstack/react-query@^5 react-router@^7 react-hook-form@^7 zod@^3 better-auth@^1 sonner@^1 tailwindcss@^3 @radix-ui/react-dialog@^1 arvox-ui-types
 ```
 
 ## 🎯 Usage Rapide
@@ -51,7 +52,7 @@ pnpm add react@^19 react-dom@^19 @tanstack/react-query@^5 react-router@^7 react-
 ### Configuration Better Auth
 
 ```tsx
-import { useAuth, useBetterAuthSession } from '@arvox/ui';
+import { useAuth, useBetterAuthSession } from 'arvox-ui';
 import { betterAuthClient } from './auth-config';
 
 function App() {
@@ -85,7 +86,7 @@ function App() {
 ### Composants UI
 
 ```tsx
-import { Button, Card, Dialog, Badge, Spinner } from '@arvox/ui';
+import { Button, Card, Dialog, Badge, Spinner } from 'arvox-ui';
 
 function ExamplePage() {
   return (
@@ -122,7 +123,7 @@ function ExamplePage() {
 ### Hooks de Données
 
 ```tsx
-import { useMutations, useDataQuery } from '@arvox/ui';
+import { useMutations, useDataQuery } from 'arvox-ui';
 
 function UserManagement() {
   // Query avec pagination automatique
@@ -172,7 +173,7 @@ import {
   useChangePassword, 
   useRememberMe,
   useTwoFactorAuth 
-} from '@arvox/ui';
+} from 'arvox-ui';
 
 function AccountSettings() {
   const rememberMe = useRememberMe();
@@ -223,7 +224,7 @@ import {
   useDebounce, 
   useCopyToClipboard,
   useWindowSize 
-} from '@arvox/ui';
+} from 'arvox-ui';
 
 function UtilityExample() {
   const [search, setSearch] = useState('');
@@ -274,7 +275,7 @@ import {
   cn,
   capitalize,
   isValidEmail 
-} from '@arvox/ui';
+} from 'arvox-ui';
 
 function UtilsExample() {
   const date = new Date();
@@ -299,6 +300,7 @@ function UtilsExample() {
 
 ### Structure de la Bibliothèque
 
+
 ```
 packages/arvox-ui/
 ├── src/
@@ -309,7 +311,7 @@ packages/arvox-ui/
 │   │   ├── use-remember-me.ts    # Se souvenir de moi
 │   │   ├── use-two-factor.ts     # 2FA
 │   │   ├── schemas.ts            # Validation Zod
-│   │   └── types.ts              # Types TypeScript
+│   │   └── types.ts              # Types TypeScript (exportés via arvox-ui-types)
 │   ├── components/        # Composants UI
 │   │   ├── button.tsx            # Button avec variants
 │   │   ├── card.tsx              # Card structuré
@@ -341,11 +343,12 @@ packages/arvox-ui/
 5. **Accessibilité** : Radix UI pour les primitives accessibles
 6. **Developer Experience** : Messages d'erreur français et API intuitive
 
+
 ## 📊 Bundle Size
 
 - **ESM** : 46.64 KB (optimisé)
 - **CJS** : 50.46 KB  
-- **TypeScript definitions** : 31.67 KB
+- **TypeScript definitions** : 31.67 KB (exportés via arvox-ui-types)
 - **Build time** : ~2.5 secondes
 
 ## 🤝 Contribution
@@ -370,4 +373,15 @@ MIT - Arvox Team
 
 ---
 
-**@arvox/ui** - Framework UI complet pour projets React avec Better Auth intégré 🚀
+
+**arvox-ui** - Framework UI complet pour projets React avec Better Auth intégré 🚀
+
+---
+
+### Import des types
+
+Pour utiliser les types TypeScript partagés :
+
+```ts
+import type { HasId, PaginatedResponse, ApiResponse, BaseService } from 'arvox-ui-types';
+```

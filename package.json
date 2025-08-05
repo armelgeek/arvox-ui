@@ -1,5 +1,5 @@
 {
-  "name": "@arvox/ui",
+  "name": "arvox-ui",
   "version": "1.0.0",
   "description": "Bibliothèque UI réutilisable pour les projets Arvox",
   "main": "dist/index.js",

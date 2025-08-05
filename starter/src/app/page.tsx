@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardTitle, Typography } from '@arvox/ui'
+import { Button, Card, CardContent, CardTitle, Typography } from 'arvox-ui'
 
 export default function Home() {
   return (

@@ -56,4 +56,4 @@ git push origin "v$NEW_VERSION"
 
 echo "🎉 Déploiement terminé avec succès!"
 echo "📦 Version publiée: $NEW_VERSION"
-echo "🔗 https://www.npmjs.com/package/@arvox/ui"
+echo "🔗 https://www.npmjs.com/package/arvox-ui"
